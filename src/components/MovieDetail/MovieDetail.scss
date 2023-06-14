@@ -1,0 +1,30 @@
+@import "../../../src/common/colors.scss";
+
+.detailsMainWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 20px 0px;
+
+  &__content_wrapper {
+    width: 70%;
+    &__title {
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  p {
+    font-size: 0.85rem;
+    padding: 20px 0px;
+    line-height: 22px;
+  }
+}
