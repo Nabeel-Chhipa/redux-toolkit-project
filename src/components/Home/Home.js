@@ -5,10 +5,12 @@ import { fetchAsyncMovies, fetchAsyncShows } from "../../features/movies/movieSl
 
 const Home = () => {
   const dispatch = useDispatch();
+  const defaultMovieSearchTerm = 'Harry'
+  const defaultShowSearchTerm = 'Friends'
 
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(defaultMovieSearchTerm));
+    dispatch(fetchAsyncShows(defaultShowSearchTerm));
   }, [dispatch]);
 
   return (
